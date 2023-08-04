@@ -15,16 +15,16 @@ print((10+2)*3) #36
 radius=10
 height=3
 volume=(1/3)*(math.pi)*(radius**2)*(height)
-print('Volume : ', volume) # Volume :  314.15926535897927
+print('Volume :', volume) # Volume :  314.15926535897927
 # to show volume till 2 decimal places
-print('Volume : ', round(volume,2)) # Volume :  314.16
+print('Volume :', round(volume,2)) # Volume :  314.16
 
 # Number data types (int, float, complex numbers)
 print(type(volume)) # float
 foo=2.3e-3
 print(foo) # 0.0023
 print(type(1)) # int
-print(0x12) # 18
+print(0xA) # 10 (A is base 16)
 print(type(0x12)) # int
 c1=2+3j
 print(type(c1)) # complex
