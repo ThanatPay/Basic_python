@@ -24,7 +24,7 @@ else:
 # not _
 
 
-# Cousine checker. Explains if..elif..else
+# list checker. Explains if..elif..else
 set1=[0,3,6,9]
 set2=[1,4,7,10]
 set3=[2,5,8,11]
@@ -32,13 +32,13 @@ set3=[2,5,8,11]
 n=int(input("Enter a number:"))
 
 if n in set1:
-    print(f"{n} is set1")
+    print(f"{n} is member of set1")
 elif n in set2:
-    print(f"{n} is set2")
+    print(f"{n} is member of set2")
 elif n in set3:
-    print(f"{n} is set3")
+    print(f"{n} is member of set3")
 else:
-    print(f"{n} is not all")
+    print(f"{n} is not member of all set")
 	
 
 # Ternary operator
