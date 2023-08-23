@@ -1,13 +1,13 @@
 # dictionaries
 # store data on key:value format
-Dict = {"Alison": "Becker",
+Dict = {"Alisson": "Becker",
         "Ibrahima": "Konate",
         "Jordan": "Henderson",
         "Mohamed": "Salah"}
 print(Dict)
 print(type(Dict))
 # you can get value from dict[key]
-print(Dict['Alison'])
+print(Dict['Alisson'])
 
 # update dict
 # The key may or may not exist in the dict
@@ -29,9 +29,9 @@ print(Dict)
 # if key doesn't exist in dict
 # print(Dict['alison'])
 # using get function
-print(Dict.get('Alison'))
-print(Dict.get('alison'))
-print(Dict.get('alison',1))
+print(Dict.get('Alisson'))
+print(Dict.get('alisson'))
+print(Dict.get('alisson',1))
 
 # remove key but return function
 # using pop function
