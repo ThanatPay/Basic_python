@@ -76,4 +76,16 @@ print("Print value1 outside function:",value1)
 # print("Print value1 outside function:",value2)
 show_value()
 
+# function can reture function
+def fn(op):
+    def add(a,b): return a+b
+    def substract(a,b): return a-b
+    if op=='+':
+        return add
+    else:
+        return substract
+    
+func=fn('-')
+print('function:',func(5,3))
+
 
