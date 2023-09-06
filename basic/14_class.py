@@ -51,3 +51,28 @@ p.showData() # name change, weight dont change, weight dont change
 p._height=185.0
 p.__weight=81.0
 p.showData() # weight change, weight dont change
+
+# __str__: when call class return value type string (Normally, not return value)
+class Player:
+    def __init__(self,name,height,weight):
+        self.name=name # public attribute
+        self.height=height # privat attribute
+        self.weight=weight # protect attribute
+    def __str__(self):
+        # print(vars(self)) # get variable to dictionary
+        return "name:{} height:{} weight:{}".format(self.name,self.height,self.weight)
+
+print(Player('Steven',183.5,80.0))
+
+# __repr__: when call class return value (traditional type)
+# self.__class__.__name__ -> return name of class
+class Player:
+    def __init__(self,name,height,weight):
+        self.name=name # public attribute
+        self.height=height # privat attribute
+        self.weight=weight # protect attribute
+    def __repr__(self):
+        return "{}{}".format(self.__class__.__name__,repr((self.name,self.height,self.weight)))
+
+print(Player('Steven',183.5,80.0))
+# if you have both __str__ and __repr__ -> run __str__
